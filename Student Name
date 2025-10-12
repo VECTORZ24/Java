@@ -1,0 +1,29 @@
+public class Student1 {
+    private int SID;
+    private String name;
+
+    // Constructor must match the class name
+    public Student1(int SID, String name) {
+        this.SID = SID;
+        this.name = name;
+    }
+
+    public void St_print() {
+        System.out.println("SID=" + SID + ", name: " + name);
+    }
+
+    public void get_name(){
+        System.out.println("name: " +name);
+    }
+    public void set_name(String name){
+        this.name=name;
+    }
+    // Main method to test
+    public static void main(String[] args) {
+        Student1 s1 = new Student1(101, "Ali");
+        Student1 s2=new Student1(102,"Mohamed");
+        Student1 s3=new Student1(103,"Ahmed");
+        s1.set_name("GOOTY");
+        s1.get_name();
+    }
+}
