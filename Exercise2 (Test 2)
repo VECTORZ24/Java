@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Test {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+        
+        // Read string from user
+        System.out.print("Enter a string: ");
+        String userInput = input.nextLine();
+
+        // Use methods
+        STRING S=new STRING();
+        int letterCount = S.countLetters(userInput);
+        int digitCount = S.countDigits(userInput);
+
+        // Output results
+        System.out.println("\nNumber of letters: " + letterCount);
+        System.out.println("Number of digits: " + digitCount);
+}
+}
