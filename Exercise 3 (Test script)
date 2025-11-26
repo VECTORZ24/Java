@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Test {
+public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Read number from user
+        System.out.print("Enter a number: ");
+        int num = input.nextInt();
+
+        // Call method
+        boolean result = isPalindrome(num);
+
+        // Output result
+        if (result) {
+            System.out.println(num + " is a palindrome.");
+        } else {
+            System.out.println(num + " is NOT a palindrome.");
+        }
+    }}
