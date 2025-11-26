@@ -1,0 +1,22 @@
+public class STRING {
+    public static int countLetters(String s) {
+        int count = 0;
+        for (char c : s.toCharArray()) {
+            if (Character.isLetter(c)) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // Method to count digits in the string
+    public static int countDigits(String s) {
+        int count = 0;
+        for (char c : s.toCharArray()) {
+            if (Character.isDigit(c)) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
